@@ -1,0 +1,95 @@
+// MIXINS
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//CSS
+body {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  float: left;
+  position: fixed;
+  left: 5%;
+  font-size: 100px;
+  top: 50px;
+  z-index: 9;
+  font-family: 'Monsieur La Doulaise', cursive;
+  text-shadow: -3px 1px white, 1px 3px lightgrey, 3px 1px white, 1px -3px white;
+}
+
+.tabs-menu {
+  position: fixed;
+  clear: both;
+  left: 70%;
+  top: 150px;
+}
+
+.tabs-menu li a {
+  padding: 2px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Days One', sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 1px;
+  background-color: grey;
+  border-radius: 0px 25px 25px 0px;
+  width: 150px;
+  @include transition(linear .3s)
+}
+
+.tabs-menu li a:hover {
+  width: 180px;
+  @include transition(linear .3s)
+}
+
+.tabs-menu .current a {
+  color: #2e7da3;
+  background-color: lightgrey;
+  width: 180px;
+  @include transition(linear .3s)
+}
+
+.tab {
+  border: 1px solid #d4d4d1;
+  width: 75%;
+  max-width: 1000px;
+  background-color: #fff;
+  left: 4%;
+  bottom: 18%;
+  top: 150px;
+  position: fixed;
+}
+
+.tab-content {
+  display: none;
+}
+
+#tab-1 {
+  display: block;
+}
+
+.chara-roll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: lightgrey;
+  width: 100%;
+  height: 12%;
+  min-height: 100px;
+}
