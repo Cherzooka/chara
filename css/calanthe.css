@@ -237,7 +237,7 @@ s:after {
 
 #hpexp {
   padding: 30px;
-  margin-right: 40%;
+  width: 50%;
 }
 
 #hp {
@@ -301,8 +301,9 @@ s:after {
 
 .circles {
   float: right;
-  width: 60%;
+  width: 50%;
   margin-top: -150px;
+  padding: 30px;
 }
 
 .circle {
@@ -324,6 +325,11 @@ s:after {
   position: relative;
   display: inline-block;
   color: #de87ba;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 #circlevalue a {

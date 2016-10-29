@@ -16,7 +16,7 @@
 
 #hpexp {
     padding: 30px;
-    margin-right: 40%;
+	width: 50%;
 }
       
 #hp {
@@ -64,8 +64,9 @@
 
 .circles {
 	float: right;
-	width: 60%;
+	width: 50%;
 	margin-top: -150px;
+	padding: 30px;
 }
 
 .circle {
@@ -87,6 +88,7 @@
     position: relative;
 	display: inline-block;
     color: $accentcolor;
+	@include transition(linear .3s)
 }
 
 #circlevalue a {
