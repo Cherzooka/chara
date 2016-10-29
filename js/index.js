@@ -9,6 +9,6 @@ $(document).ready(function() {
   });
 });
 
-function swapStyleSheet(sheet){
-	document.getElementById('pagestyle').setAttribute('href', sheet);
+function swapStyleSheet(sheet) {
+  document.getElementById('pagestyle').setAttribute('href', sheet);
 }

@@ -1,0 +1,16 @@
+// Variables
+
+$backgroundimage: "https://dl.dropboxusercontent.com/s/cw3eo00k5te12no/dark_exa_%402X.png";
+
+$backgroundcolor: #141414;
+$border1color: #373737;
+$border2color: #262626;
+$fontcolor: #bbbbbb;
+$accentcolor: #24ad95;
+
+@import 'universal';
+@import 'mixins';
+
+.levent {
+	display: inline;
+}

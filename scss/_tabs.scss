@@ -1,0 +1,66 @@
+
+.tabs-menu-mover {
+  width: 75%;
+  max-width: 1000px;
+  background-color: black;
+  left: 4%;
+  position: relative;
+  display: inline-block;
+}
+
+.tabs-menu {
+  clear: both;
+  display: inline-block;
+  position: relative;
+  top: 150px;
+}
+
+.tabs-menu li a {
+  padding: 2px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  color: $accentcolor;
+  font-family: 'Days One', sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 1px;
+  background-color: $border1color;
+  border-radius: 0px 25px 25px 0px;
+  width: 150px;
+  @include user-select(none)
+}
+
+.tabs-menu li a:hover {
+  width: 180px;
+}
+
+.tabs-menu .current a {
+  color: $fontcolor;
+  background-color: $border2color;
+  width: 180px;
+}
+
+.tab {
+  border: 2px solid $border2color;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 1000px;
+  background-color: $backgroundcolor;
+  left: 4%;
+  bottom: 18%;
+  top: 150px;
+  position: fixed;
+  z-index: 8;
+  color: $fontcolor;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+#tab-1 {
+  display: block;
+}
