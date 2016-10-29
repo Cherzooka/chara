@@ -24,15 +24,15 @@
   <div class="chara-roll"> <!-------------------------------- CHARACTER SELECT --->
   
     <div class="chara"> <!--------------------------------- TEMPLATE CHARACTER --->
-		<button onclick="swapStyleSheet('css/base.css')" style="border-color:#dddddd;background:linear-gradient(to bottom, rgba(255,0,0,0), #ffffff;"> 
+		<button onclick="swapStyleSheet('css/base.css')" style="border-color:#dddddd;background:linear-gradient(to bottom, rgba(255,0,0,0), #ffffff);"> 
 			<b style="color:#be9a18;"> Template </b> 
 		</button></div>
 	<div class="chara"> <!---------------------------------------- EVREN DEMIR --->
-		<button onclick="swapStyleSheet('css/evren.css')" style="border-color:#353137;background:linear-gradient(to bottom, rgba(255,0,0,0), #131218;"> 
+		<button onclick="swapStyleSheet('css/evren.css')" style="border-color:#353137;background:linear-gradient(to bottom, rgba(255,0,0,0), #131218);"> 
 			<b style="color:#5040b1;"> Evren Demir </b> 
 		</button></div>
 	<div class="chara"> <!------------------------------------------- CALANTHE --->
-		<button onclick="swapStyleSheet('css/calanthe.css')" style="border-color:#f0f0f0;background:linear-gradient(to bottom, rgba(255,0,0,0), #fafafa;"> 
+		<button onclick="swapStyleSheet('css/calanthe.css')" style="border-color:#f0f0f0;background:linear-gradient(to bottom, rgba(255,0,0,0), #fafafa);"> 
 			<b style="color:#de87ba;"> Calanthe </b> 
 		</button></div>
 	<div class="chara"> <!--------------------------------------------- LEVENT --->
@@ -183,10 +183,48 @@
         </div>
       </div>
 	  <div class="block"> <!------------------------- HEALTH, EXP, MISC BASICS --->
+		<div id="hpexp"><div class="hpbar">
+			<span class="hpbarinner template" style="width:75%"></span>
+			<span class="hpbarinner evren" style="width:100%"></span>
+			<span class="hpbarinner calanthe" style="width:75%"></span>
+			<span class="hpbarinner levent" style="width:75%"></span>
+		</div>
+		<div id="hp"> 
+			<span class="template"> 10 / 10 </span>
+			<span class="evren"> 11 / 11 </span>
+			<span class="calanthe"> 10 / 10 </span>
+			<span class="levent"> 10 / 10 </span>		
+		HP </div>
+	
+	  <div id="exp">
+		<span class="template"> First </span> 
+		<span class="evren"> Second </span>
+		<span class="calanthe"> First </span>
+		<span class="levent"> First </span>
+	  Level </div></div>
+	  <div class="circles">
+		<div class="circle"><div id="circlevalue"> 
+			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="template"> 10 </a>
+			<a href="#" title="10 (Base) + 2 (Dex Modifier) + 0 (Armor Modifier) + 3 (Mage Armor)" class="evren"> 15 </a>
+			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="calanthe"> 10 </a>
+			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="levent"> 10 </a>
+		</div><div id="circlelabel"> Armor Class </div></div>
+		
+		<div class="circle"><div id="circlevalue">
+			<span class="template"> 30 </span>
+			<span class="evren"> 30 </span>
+			<span class="calanthe"> 30 </span>
+			<span class="levent"> 30 </span>
+		</div><div id="circlelabel"> Speed </div></div>
+		
+		<div class="circle"><div id="circlevalue">
+			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="template"> 10 </a>
+			<a href="#" title="10 (Base) + 0 (Wis Modifier) + 2 (Proficiency Modifier)" class="evren"> 12 </a>
+			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="calanthe"> 10 </a>
+			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="levent"> 10 </a>
+		</div><div id="circlelabel"> Perception </div></div>
 	  
-	  </div>
-	  
-	  </div>
+	  </div></div></div>
       <div id="tab-2" class="tab-content"> <!----------------------- BIOGRAPHY --->
         <p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies
           fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper

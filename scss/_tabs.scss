@@ -30,6 +30,7 @@
   border-radius: 0px 25px 25px 0px;
   width: 150px;
   @include user-select(none)
+  @include transition(linear .3s)
 }
 
 .tabs-menu li a:hover {
@@ -54,6 +55,8 @@
   position: fixed;
   z-index: 8;
   color: $fontcolor;
+  overflow: scroll;
+  @include transition(linear .3s)
 }
 
 .tab-content {

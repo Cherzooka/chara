@@ -2,7 +2,7 @@
   font-size: 15px;
   text-align: right;
   width: 46%;
-  font-family: 'muli';
+  font-family: 'Muli', sans-serif;
   display: inline-block;
   margin: 10px;
   vertical-align: top;
@@ -12,4 +12,96 @@
 .infobox .answer {
 	margin-left: 16%;
 	height: 100%;
+}
+
+#hpexp {
+    padding: 30px;
+    margin-right: 40%;
+}
+      
+#hp {
+    font-family: 'Days One', sans-serif;
+    font-size: 35px;
+    margin-top: -20px;
+    float: left;
+    padding-left: 35px;
+    display: inline-block;
+    position: relative;
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+	@include transition(linear .3s)
+}
+
+#exp {
+    font-family: 'Days One', sans-serif;
+    font-size: 35px;
+    display: inline-block;
+    position: relative;
+	text-align: right;
+	padding-top: 50px;
+	margin-right: 32px;
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+	@include transition(linear .3s)
+}
+      
+.hpbar {
+    position: relative;
+    height: 15px;
+    margin: 0px 20px;
+    background-color:  $border1color;
+    border-radius: 50px 50px 50px 50px;
+    opacity: 0.7;
+	@include transition(linear .3s)
+}
+      
+.hpbarinner {
+    position: absolute;
+    height: 15px;
+    background-color: darkred;
+    background-image: url("https://dl.dropboxusercontent.com/s/e6g1iuwl5kywcaj/black-twill%20%281%29.png");
+    border-radius: 50px 50px 50px 50px;
+	@include transition(linear .3s)
+}
+
+.circles {
+	float: right;
+	width: 60%;
+	margin-top: -150px;
+}
+
+.circle {
+    display: inline-block;
+    background-color: $border2color;
+	border-radius: 100px 50px 50px 100px;
+    width: 100px;
+    height: 50px;
+	float:right;
+    margin: 10px 0px 5px 50px;
+}
+      
+#circlevalue {
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+    font-family: 'Days One', sans-serif;
+    font-size: 50px;
+    float: left;
+	right: 10px;
+    position: relative;
+	display: inline-block;
+    color: $accentcolor;
+}
+
+#circlevalue a {
+	color: $accentcolor;
+}
+      
+#circlelabel {
+    float: right;
+    position: relative;
+    font-family: 'Days One', sans-serif;
+    font-size: 18px;
+	display: inline-block;
+	width: 150px;
+	margin-top: -85px;
+	margin-right: -10px;
+	text-align: right;
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
 }

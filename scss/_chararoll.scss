@@ -11,8 +11,8 @@
   min-height: 100px;
   padding-left: 100px;
   background-color: $backgroundcolor;
-  border-top: 2px solid $border2color;
-  overflow-x: scroll;
+  border-top: 2px solid $border1color;
+  @include transition(linear .3s)
 }
 
 .chara-roll img {
@@ -22,21 +22,22 @@
 
 .chara-roll button {
   border: 2px solid;
-  border-radius: 25px;
+  border-radius: 50px 50px 10px 10px;
   margin: 10px;
   margin-top: 7px;
   margin-bottom: 5px;
   height: 100px;
   width: 150px;
   font-family: 'Days One', sans-serif;
-  font-size: 16px;
-  box-shadow: 0 0 0 2px $border1color;
+  font-size: 20px;
+  box-shadow: 0 0 0 2px $border2color;
 }
 
 .chara-roll button b {
   float: right;
-  margin-top: 50%;
+  margin-top: 56%;
+  margin-right: -7%;
   text-align: right;
-  text-shadow:  -2px 0 grey, 0 2px grey, 2px 0 grey, 0 -2px grey;
+  text-shadow:  -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
   @include user-select(none)
 }

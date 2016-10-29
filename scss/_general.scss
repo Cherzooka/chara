@@ -1,6 +1,4 @@
-* {
-  @include transition(linear .6s)
-}
+
 
 ::selection {
 	background: $accentcolor;
@@ -19,6 +17,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   background-image: url($backgroundimage);
+  @include transition(linear .3s)
 }
 
 #s-m-t-tooltip {
@@ -29,22 +28,14 @@ body {
     background: $backgroundcolor;
     font-size: 12px;
     color: $fontcolor;
-    font-family: 'muli';
+    font-family: 'Muli', sans-serif;
     border: 2px solid $border2color;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-}
-      
-::-webkit-scrollbar-thumb {
-    background: $border2color;
-}
-      
-::-webkit-scrollbar-track {
-    background: $backgroundcolor;
+    width: 0px;
+    height: 0px;
 }
 
 ul {
@@ -84,6 +75,7 @@ s:after {
   color: $fontcolor;
   text-shadow: -3px 1px $backgroundcolor, 1px 3px $border2color, 3px 1px $backgroundcolor, 1px -3px $backgroundcolor;
   @include user-select(none)
+  @include transition(linear .3s)
 }
 
 .line {
@@ -91,6 +83,7 @@ s:after {
   padding-top: 5px;
   padding-right: 25px;
   color: $fontcolor;
+  @include transition(linear .3s)
 }
 
 .linelabel {
@@ -107,6 +100,7 @@ s:after {
   color: $accentcolor;
   text-shadow: -2px 0 $backgroundcolor, 0 2px $backgroundcolor, 2px 0 $backgroundcolor, 0 -2px $backgroundcolor;
   @include user-select(none)
+  @include transition(linear .3s)
 }
 
 .linelabel::first-letter {
