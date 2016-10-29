@@ -8,3 +8,7 @@ $(document).ready(function() {
     $(tab).fadeIn();
   });
 });
+
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}

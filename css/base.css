@@ -1,0 +1,116 @@
+* {
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  background-image: url("https://dl.dropboxusercontent.com/s/wd5ch8lxk2gsnh7/halftone.png");
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  float: left;
+  position: fixed;
+  left: 5%;
+  font-size: 100px;
+  top: 50px;
+  z-index: 9;
+  font-family: 'Monsieur La Doulaise', cursive;
+  cursor: default;
+  color: #666666;
+  text-shadow: -3px 1px #ffffff, 1px 3px #dddddd, 3px 1px #ffffff, 1px -3px #ffffff;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.tabs-menu-mover {
+  width: 75%;
+  max-width: 1000px;
+  background-color: black;
+  left: 4%;
+  position: relative;
+  display: inline-block;
+}
+
+.tabs-menu {
+  clear: both;
+  display: inline-block;
+  position: relative;
+  top: 150px;
+}
+
+.tabs-menu li a {
+  padding: 2px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  color: #666666;
+  font-family: 'Days One', sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 1px;
+  background-color: #cccccc;
+  border-radius: 0px 25px 25px 0px;
+  width: 150px;
+}
+
+.tabs-menu li a:hover {
+  width: 180px;
+}
+
+.tabs-menu .current a {
+  color: #be9a18;
+  background-color: #dddddd;
+  width: 180px;
+}
+
+.tab {
+  border: 1px solid #dddddd;
+  width: 75%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  left: 4%;
+  bottom: 18%;
+  top: 150px;
+  position: fixed;
+  z-index: 8;
+  color: #666666;
+}
+
+.tab-content {
+  display: none;
+}
+
+#tab-1 {
+  display: block;
+}
+
+.chara-roll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #dddddd;
+  width: 100%;
+  height: 12%;
+  min-height: 100px;
+}
+
+.chara-roll img {
+  height: 95%;
+  width: 100px;
+  margin: auto;
+}

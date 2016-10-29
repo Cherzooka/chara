@@ -7,9 +7,9 @@
     
     
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Days+One|Muli'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Days+One|Muli'>
 
-        <link rel="stylesheet" href="css/style.css">
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="css/base.css">
 
     
     
@@ -21,7 +21,11 @@
 
     <div class="header">Character Name</div>
 
-<div class="chara-roll"></div>
+<div class="chara-roll">
+<img src="">
+<button onclick="swapStyleSheet('css/base.css')">A</button>
+<button onclick="swapStyleSheet('css/evren.css')">B</button>
+</div>
 
 <div id="tabs-container">
 
@@ -50,9 +54,19 @@
         Nullam at enim at lacus pretium iaculis sit amet vel nunc. Praesent sapien felis, tincidunt vitae blandit ut, mattis at diam. Suspendisse ac sapien eget eros venenatis tempor quis id odio. Donec lacus leo, tincidunt eget molestie at, pharetra
         cursus odio. </p>
     </div>
+	<div id="tab-5" class="tab-content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum eu leo ullamcorper faucibus ac eu libero. Quisque eu elementum lorem. Morbi facilisis, ex ut faucibus pharetra, massa purus convallis tellus, quis iaculis urna mauris nec nulla. Quisque non pretium nisl. Fusce molestie tortor ut maximus vestibulum. Phasellus et tincidunt massa. Pellentesque vestibulum eu orci et condimentum. Sed facilisis, arcu nec mollis suscipit, dui leo vulputate lorem, ac tincidunt nunc libero ut quam. Etiam at tellus nibh. Morbi eleifend, erat in volutpat fringilla, leo elit imperdiet turpis, eget mollis nisi turpis quis mauris. Vestibulum pulvinar risus vel nulla aliquet maximus. Pellentesque laoreet vel arcu id tincidunt. Fusce eleifend vehicula tempus. Morbi tellus lorem, interdum ac purus ac, rhoncus imperdiet metus. Duis sagittis tellus vitae diam volutpat, quis blandit nibh tristique. Suspendisse potenti.</p>
+	</div>
+	<div id="tab-6" class="tab-content">
+	<p>Vivamus congue ex sit amet risus volutpat aliquam. Mauris eleifend ligula non porttitor semper. In sit amet auctor lacus. Sed eros dolor, laoreet sit amet lacinia at, volutpat ac nisl. Suspendisse semper tortor in sapien auctor sodales. Nam a maximus orci, vitae malesuada urna. Etiam interdum risus eu nisl volutpat, id placerat tortor pulvinar. Fusce felis felis, accumsan vel pharetra ut, vehicula in nunc. Proin velit magna, vestibulum sit amet vestibulum vel, commodo finibus libero. Nulla imperdiet eros nec dui imperdiet, vel tincidunt mauris efficitur. Vivamus sed tempor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus porta augue eleifend quam maximus lobortis. Phasellus id velit a erat porta congue sit amet et turpis.</p>
+	</div>
+	<div id="tab-7" class="tab-content">
+	<p>Curabitur eleifend purus ut viverra congue. Vestibulum molestie id leo ut maximus. Quisque ac euismod erat, non molestie nunc. Cras dapibus ipsum justo, a consequat ante sagittis ut. Nunc placerat sapien non erat interdum, vitae luctus velit malesuada. Phasellus vitae eros ut urna pharetra condimentum eget vitae quam. Duis blandit enim nec tortor finibus, posuere maximus nunc venenatis. In porttitor molestie lacus at consequat. Ut scelerisque varius metus sit amet imperdiet. Praesent lobortis eros sit amet pretium vehicula. Aliquam augue magna, tristique ac pharetra id, mattis nec enim. Sed elit ipsum, vehicula vel lacinia in, sagittis sagittis risus.</p>
+	</div>
   </div>
 
 
+<div class="tabs-menu-mover"></div>
   <ul class="tabs-menu">
     <li class="current"><a href="#tab-1">Main</a></li>
     <li><a href="#tab-2">Biography</a></li>
@@ -62,7 +76,6 @@
     <li><a href="#tab-6">Inventory</a></li>
     <li><a href="#tab-7">Misc.</a></li>
   </ul>
-
 </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 

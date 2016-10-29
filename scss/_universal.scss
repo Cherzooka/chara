@@ -1,0 +1,126 @@
+// MIXINS
+@mixin transition($args...) {
+  -webkit-transition: $args;
+      -moz-transition: $args;
+        -ms-transition: $args;
+           -o-transition: $args;
+                transition: $args;
+}
+
+@mixin user-select($args...) {
+	-webkit-user-select: $args;
+         -khtml-user-select: $args;
+           -moz-user-select: $args;
+             -ms-user-select: $args;
+                -o-user-select: $args;
+                     user-select: $args;
+}
+
+//CSS
+* {
+	@include transition(linear .3s)
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  background-image: url($backgroundimage);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  float: left;
+  position: fixed;
+  left: 5%;
+  font-size: 100px;
+  top: 50px;
+  z-index: 9;
+  font-family: 'Monsieur La Doulaise', cursive;
+  cursor: default;
+  color: $fontcolor;
+  text-shadow: -3px 1px $backgroundcolor, 1px 3px $border2color, 3px 1px $backgroundcolor, 1px -3px $backgroundcolor;
+  @include user-select(none)
+}
+
+.tabs-menu-mover {
+	width: 75%;
+	max-width: 1000px;
+	background-color: black;
+	left: 4%;
+	position: relative;
+	display: inline-block;
+}
+
+.tabs-menu {
+  clear: both;
+  display: inline-block;
+  position: relative;
+  top: 150px;
+}
+
+.tabs-menu li a {
+  padding: 2px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  color: $fontcolor;
+  font-family: 'Days One', sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 1px;
+  background-color: $border1color;
+  border-radius: 0px 25px 25px 0px;
+  width: 150px;
+}
+
+.tabs-menu li a:hover {
+  width: 180px;
+}
+
+.tabs-menu .current a {
+  color: $accentcolor;
+  background-color: $border2color;
+  width: 180px;
+}
+
+.tab {
+  border: 1px solid $border2color;
+  width: 75%;
+  max-width: 1000px;
+  background-color: $backgroundcolor;
+  left: 4%;
+  bottom: 18%;
+  top: 150px;
+  position: fixed;
+  z-index: 8;
+  color: $fontcolor;
+}
+
+.tab-content {
+  display: none;
+}
+
+#tab-1 {
+  display: block;
+}
+
+.chara-roll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $border2color;
+  width: 100%;
+  height: 12%;
+  min-height: 100px;
+}
+
+.chara-roll img {
+	height: 95%;
+	width: 100px;
+	margin: auto;
+}
