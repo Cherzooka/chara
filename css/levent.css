@@ -2,6 +2,10 @@
   display: none;
 }
 
+* {
+  cursor: default;
+}
+
 ::selection {
   background: #24ad95;
 }
