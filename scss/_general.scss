@@ -49,8 +49,12 @@ a {
 	color: $fontcolor
 }
 
-i{
+i, strong, b{
 	color: $accentcolor
+}
+
+strong {
+ font-family: 'Days One', sans-serif;
 }
 
 s {

@@ -57,8 +57,12 @@ a {
   color: #666666;
 }
 
-i {
+i, strong, b {
   color: #be9a18;
+}
+
+strong {
+  font-family: 'Days One', sans-serif;
 }
 
 s {
@@ -501,6 +505,73 @@ hr {
   height: 12px;
   background-color: #cccccc;
   border-radius: 50px 50px 50px 50px;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.container {
+  padding: 20px 50px;
+}
+
+.container p {
+  margin: 0;
+  text-indent: 20px;
+  padding: 0 20px;
+}
+
+.relation {
+  margin-left: 15%;
+  margin-right: 21%;
+  padding: 20px 25px 10px 0px;
+  min-height: 245px;
+}
+
+.relation img {
+  height: 200px;
+  width: 100px;
+  margin: 0 10px;
+  border: 3px solid #ffffff;
+  border-radius: 50px 5px 5px 50px;
+  box-shadow: 0 0 0 2px #dddddd;
+  float: left;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.relation strong {
+  font-size: 23px;
+  margin-top: 5px;
+  margin-left: -50px;
+  float: left;
+  text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.relation p {
+  text-indent: 0px;
+  padding-left: 126px;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.relation .end {
+  height: 200px;
+  width: 25px;
+  box-shadow: 0 0 0 2px #dddddd;
+  border: 2px solid #ffffff;
+  border-radius: 5px 50px 50px 5px;
+  margin-right: -37px;
+  float: right;
   -webkit-transition: linear 0.3s;
   -moz-transition: linear 0.3s;
   -ms-transition: linear 0.3s;
