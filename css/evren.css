@@ -259,7 +259,7 @@ s:after {
   float: right;
   margin-top: 50%;
   text-align: right;
-  text-shadow: -2px 0 grey,  0 2px grey,  2px 0 grey,  0 -2px grey;
+  text-shadow: -2px 0 grey, 0 2px grey, 2px 0 grey, 0 -2px grey;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
