@@ -15,8 +15,10 @@
 }
 
 #hpexp {
-    padding: 30px;
 	width: 50%;
+	padding: 30px 10px;
+	border-right: 2px solid $border2color;
+	@include transition(linear .3s)
 }
       
 #hp {
@@ -26,9 +28,11 @@
     float: left;
     padding-left: 35px;
     display: inline-block;
+	cursor: default;
     position: relative;
     text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
 	@include transition(linear .3s)
+	@include user-select(none)
 }
 
 #exp {
@@ -38,7 +42,6 @@
     position: relative;
 	text-align: right;
 	padding-top: 50px;
-	margin-right: 32px;
     text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
 	@include transition(linear .3s)
 }
@@ -64,9 +67,9 @@
 
 .circles {
 	float: right;
-	width: 50%;
-	margin-top: -150px;
-	padding: 30px;
+	width: 45%;
+	margin-top: -160px;
+	padding: 30px 0px;
 }
 
 .circle {
@@ -76,23 +79,27 @@
     width: 100px;
     height: 50px;
 	float:right;
-    margin: 10px 0px 5px 50px;
+    margin: 10px 20px 5px 20px;
+	@include transition(linear .3s)
 }
       
 #circlevalue {
     text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
-    font-family: 'Days One', sans-serif;
+ font-family: 'Days One', sans-serif;
     font-size: 50px;
     float: left;
+	cursor: default;
 	right: 10px;
     position: relative;
 	display: inline-block;
     color: $accentcolor;
 	@include transition(linear .3s)
+	@include user-select(none)
 }
 
 #circlevalue a {
 	color: $accentcolor;
+	cursor: default;
 }
       
 #circlelabel {
@@ -102,8 +109,83 @@
     font-size: 18px;
 	display: inline-block;
 	width: 150px;
+	cursor: default;
 	margin-top: -85px;
 	margin-right: -10px;
 	text-align: right;
     text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+	@include transition(linear .3s)
+	@include user-select(none)
+}
+
+#statline {
+        padding: 20px;
+        width: 44%;
+        display: inline-block;
+}
+	  
+#statline a {
+    color: $fontcolor;
+	cursor: default;
+}
+      
+#statprof {
+    float: left;
+    position: relative;
+    z-index: 9;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: -9px;
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+	@include transition(linear .3s)
+}
+      
+#stat {
+    display: inline;
+    font-family: 'Days One', sans-serif;
+    position: relative;
+    font-size: 35px;
+    float: left;
+    z-index: 9;
+    margin-top: -17px;
+    margin-left: 15px;
+	cursor: default;
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+	@include transition(linear .3s)
+	@include user-select(none)
+}
+
+#stat2 {
+    font-family: 'Days One', sans-serif;
+    display: inline;
+    margin-top: -20px;
+    font-size: 40px;
+    position: relative;
+    float: right;
+	cursor: default;
+    padding-right: 10px;
+    text-shadow: -3px 0 $backgroundcolor, 0 3px $backgroundcolor, 3px 0 $backgroundcolor, 0 -3px $backgroundcolor;
+    z-index: 9;
+	@include transition(linear .3s)
+	@include user-select(none)
+}
+      
+.bar {
+    position: relative;
+    height: 12px;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    background-color: $border2color;
+    border-radius: 50px 50px 50px 50px;
+	@include transition(linear .3s)
+}
+      
+.barinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    background-color: $border1color;
+    border-radius: 50px 50px 50px 50px;
+	@include transition(linear .3s)
 }

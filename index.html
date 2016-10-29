@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Days+One|Muli'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Days+One|Muli|Droid+Sans+Mono'>
   <link id="pagestyle" rel="stylesheet" type="text/css" href="css/base.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -181,84 +181,166 @@
             <div class="answer levent"> Chaotic Neutral </div>
           </div>
         </div>
-      </div>
+      <hr></div>
 	  <div class="block"> <!------------------------- HEALTH, EXP, MISC BASICS --->
-		<div id="hpexp"><div class="hpbar">
+		<div id="hpexp"> <!-------------------------------------------- HEALTH --->
+		<div class="hpbar"> <!------------------------------------- HEALTH BAR --->
 			<span class="hpbarinner template" style="width:75%"></span>
 			<span class="hpbarinner evren" style="width:100%"></span>
 			<span class="hpbarinner calanthe" style="width:75%"></span>
 			<span class="hpbarinner levent" style="width:75%"></span>
 		</div>
-		<div id="hp"> 
+		<div id="hp"> <!------------------------------------------ HEALTH TEXT --->
 			<span class="template"> 10 / 10 </span>
 			<span class="evren"> 11 / 11 </span>
 			<span class="calanthe"> 10 / 10 </span>
 			<span class="levent"> 10 / 10 </span>		
 		HP </div>
 	
-	  <div id="exp">
+	  <div id="exp"> <!------------------------------------------------- LEVEL --->
 		<span class="template"> First </span> 
 		<span class="evren"> Second </span>
 		<span class="calanthe"> First </span>
 		<span class="levent"> First </span>
 	  Level </div></div>
-	  <div class="circles">
-		<div class="circle"><div id="circlevalue"> 
+	  <div class="circles"> <!-------------------------- AC, SPEED, PERCEPTION --->
+		<div class="circle"><div id="circlevalue"> <!------------- ARMOR CLASS --->
 			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="template"> 10 </a>
 			<a href="#" title="10 (Base) + 2 (Dex Modifier) + 0 (Armor Modifier) + 3 (Mage Armor)" class="evren"> 15 </a>
 			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="calanthe"> 10 </a>
 			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="levent"> 10 </a>
 		</div><div id="circlelabel"> Armor Class </div></div>
-		
-		<div class="circle"><div id="circlevalue">
+		<div class="circle"><div id="circlevalue"> <!------------------- SPEED --->
 			<span class="template"> 30 </span>
 			<span class="evren"> 30 </span>
 			<span class="calanthe"> 30 </span>
 			<span class="levent"> 30 </span>
 		</div><div id="circlelabel"> Speed </div></div>
-		
-		<div class="circle"><div id="circlevalue">
+		<div class="circle"><div id="circlevalue"> <!-------------- PERCEPTION --->
 			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="template"> 10 </a>
 			<a href="#" title="10 (Base) + 0 (Wis Modifier) + 2 (Proficiency Modifier)" class="evren"> 12 </a>
 			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="calanthe"> 10 </a>
 			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="levent"> 10 </a>
 		</div><div id="circlelabel"> Perception </div></div>
 	  
-	  </div></div></div>
+	  </div>
+	  </div>
+	  <div class="block"><hr> <!---------------------------------------- STATS --->
+			<div id="statline"><div id="statprof"> <!---------------- STRENGTH --->
+				<i class="fa fa-circle-o template" aria-hidden="true"></i>
+				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
+				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+			</div><div id="stat">STR</div>
+				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
+				<div id="stat2" class="evren"><a href="#" title="Modifier: -1" class="evren"> 8 </a></div>
+				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
+				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+			<div class="bar">
+				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner evren" style="width:40%"></span>
+				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner levent" style="width:50%"></span>
+			</div></div>
+			<div id="statline"><div id="statprof"> <!------------ INTELLIGENCE --->
+				<i class="fa fa-circle-o template" aria-hidden="true"></i>
+				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
+				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+			</div><div id="stat">INT</div>
+				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
+				<div id="stat2" class="evren"><a href="#" title="Modifier: +2 | 14 (Base) + 1 (Racial)" class="evren"> 15 </a></div>
+				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
+				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+			<div class="bar">
+				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner evren" style="width:75%"></span>
+				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner levent" style="width:50%"></span>
+			</div></div>
+			<div id="statline"><div id="statprof"> <!--------------- DEXTERITY --->
+				<i class="fa fa-circle-o template" aria-hidden="true"></i>
+				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
+				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+			</div><div id="stat">DEX</div>
+				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
+				<div id="stat2" class="evren"><a href="#" title="Modifier: +2" class="evren"> 15 </a></div>
+				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
+				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+			<div class="bar">
+				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner evren" style="width:75%"></span>
+				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner levent" style="width:50%"></span>
+			</div></div>
+			<div id="statline"><div id="statprof"> <!------------------ WISDOM --->
+				<i class="fa fa-circle-o template" aria-hidden="true"></i>
+				<i class="fa fa-circle evren" aria-hidden="true"></i>
+				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+			</div><div id="stat">WIS</div>
+				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
+				<div id="stat2" class="evren"><a href="#" title="Modifier: +0" class="evren"> 10 </a></div>
+				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
+				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+			<div class="bar">
+				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner evren" style="width:50%"></span>
+				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner levent" style="width:50%"></span>
+			</div></div>
+			<div id="statline"><div id="statprof"> <!------------ CONSTITUTION --->
+				<i class="fa fa-circle-o template" aria-hidden="true"></i>
+				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
+				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+			</div><div id="stat">CON</div>
+				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
+				<div id="stat2" class="evren"><a href="#" title="Modifier: -1" class="evren"> 8 </a></div>
+				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
+				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+			<div class="bar">
+				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner evren" style="width:40%"></span>
+				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner levent" style="width:50%"></span>
+			</div></div>
+			<div id="statline"><div id="statprof"> <!---------------- CHARISMA --->
+				<i class="fa fa-circle-o template" aria-hidden="true"></i>
+				<i class="fa fa-circle evren" aria-hidden="true"></i>
+				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+			</div><div id="stat">CHA</div>
+				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
+				<div id="stat2" class="evren"><a href="#" title="Modifier: +3 | 15 (Base) + 2 (Racial)" class="evren"> 17 </a></div>
+				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
+				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+			<div class="bar">
+				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner evren" style="width:85%"></span>
+				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner levent" style="width:50%"></span>
+			</div></div>
+	  </div>
+	  </div>
       <div id="tab-2" class="tab-content"> <!----------------------- BIOGRAPHY --->
-        <p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies
-          fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper
-          eget, sagittis sed eros. Proin tortor tellus, pulvinar at imperdiet in, egestas sed nisl. Aenean tempor neque ut felis dignissim ac congue felis viverra. </p>
-
+        
       </div>
       <div id="tab-3" class="tab-content"> <!--------------- FEATURES & TRAITS --->
-        <p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin
-          interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero massa. Integer tempus laoreet lectus id interdum. Integer facilisis egestas dui at convallis. Praesent elementum nisl et erat iaculis a blandit ligula mollis. Vestibulum
-          vitae risus dui, nec sagittis arcu. Nullam tortor enim, placerat quis eleifend in, viverra ac lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus justo porta. </p>
+        
       </div>
       <div id="tab-4" class="tab-content"> <!------------------- PROFICIENCIES --->
-        <p>Proin sollicitudin tincidunt quam, in egestas dui tincidunt non. Maecenas tempus condimentum mi, sed convallis tortor iaculis eu. Cras dui dui, tempor quis tempor vitae, ullamcorper in justo. Integer et lorem diam. Quisque consequat lectus eget
-          urna molestie pharetra. Cras risus lectus, lobortis sit amet imperdiet sit amet, eleifend a erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit amet ornare tellus. Pellentesque nec augue a nibh pharetra scelerisque quis sit amet felis.
-          Nullam at enim at lacus pretium iaculis sit amet vel nunc. Praesent sapien felis, tincidunt vitae blandit ut, mattis at diam. Suspendisse ac sapien eget eros venenatis tempor quis id odio. Donec lacus leo, tincidunt eget molestie at, pharetra
-          cursus odio. </p>
+        
       </div>
       <div id="tab-5" class="tab-content"> <!----------------------- SPELLBOOK --->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id ipsum eu leo ullamcorper faucibus ac eu libero. Quisque eu elementum lorem. Morbi facilisis, ex ut faucibus pharetra, massa purus convallis tellus, quis iaculis urna mauris nec
-          nulla. Quisque non pretium nisl. Fusce molestie tortor ut maximus vestibulum. Phasellus et tincidunt massa. Pellentesque vestibulum eu orci et condimentum. Sed facilisis, arcu nec mollis suscipit, dui leo vulputate lorem, ac tincidunt nunc libero
-          ut quam. Etiam at tellus nibh. Morbi eleifend, erat in volutpat fringilla, leo elit imperdiet turpis, eget mollis nisi turpis quis mauris. Vestibulum pulvinar risus vel nulla aliquet maximus. Pellentesque laoreet vel arcu id tincidunt. Fusce
-          eleifend vehicula tempus. Morbi tellus lorem, interdum ac purus ac, rhoncus imperdiet metus. Duis sagittis tellus vitae diam volutpat, quis blandit nibh tristique. Suspendisse potenti.</p>
+        
       </div>
       <div id="tab-6" class="tab-content"> <!----------------------- INVENTORY --->
-        <p>Vivamus congue ex sit amet risus volutpat aliquam. Mauris eleifend ligula non porttitor semper. In sit amet auctor lacus. Sed eros dolor, laoreet sit amet lacinia at, volutpat ac nisl. Suspendisse semper tortor in sapien auctor sodales. Nam a
-          maximus orci, vitae malesuada urna. Etiam interdum risus eu nisl volutpat, id placerat tortor pulvinar. Fusce felis felis, accumsan vel pharetra ut, vehicula in nunc. Proin velit magna, vestibulum sit amet vestibulum vel, commodo finibus libero.
-          Nulla imperdiet eros nec dui imperdiet, vel tincidunt mauris efficitur. Vivamus sed tempor ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus porta augue eleifend quam maximus lobortis. Phasellus
-          id velit a erat porta congue sit amet et turpis.</p>
+        
       </div>
       <div id="tab-7" class="tab-content"> <!--------------------------- MISC. --->
-        <p>Curabitur eleifend purus ut viverra congue. Vestibulum molestie id leo ut maximus. Quisque ac euismod erat, non molestie nunc. Cras dapibus ipsum justo, a consequat ante sagittis ut. Nunc placerat sapien non erat interdum, vitae luctus velit malesuada.
-          Phasellus vitae eros ut urna pharetra condimentum eget vitae quam. Duis blandit enim nec tortor finibus, posuere maximus nunc venenatis. In porttitor molestie lacus at consequat. Ut scelerisque varius metus sit amet imperdiet. Praesent lobortis
-          eros sit amet pretium vehicula. Aliquam augue magna, tristique ac pharetra id, mattis nec enim. Sed elit ipsum, vehicula vel lacinia in, sagittis sagittis risus.</p>
+        
       </div>
     
   </div>

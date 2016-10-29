@@ -35,7 +35,7 @@ body {
   font-size: 12px;
   color: #bbbbbb;
   font-family: 'Muli', sans-serif;
-  border: 2px solid #353137;
+  border: 2px solid #201e21;
   border-radius: 10px;
 }
 
@@ -53,6 +53,10 @@ a {
   color: #bbbbbb;
 }
 
+i {
+  color: #5040b1;
+}
+
 s {
   text-decoration: none;
   position: relative;
@@ -64,9 +68,21 @@ s:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-top: 2px solid #201e21;
+  border-top: 2px solid #353137;
   height: 45%;
   width: 100%;
+}
+
+hr {
+  background-color: #201e21;
+  border: none;
+  height: 2px;
+  width: 50%;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 .header {
@@ -79,7 +95,7 @@ s:after {
   font-family: 'Monsieur La Doulaise', cursive;
   cursor: default;
   color: #bbbbbb;
-  text-shadow: -3px 1px #131218, 1px 3px #353137, 3px 1px #131218, 1px -3px #131218;
+  text-shadow: -3px 1px #131218, 1px 3px #201e21, 3px 1px #131218, 1px -3px #131218;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -94,7 +110,7 @@ s:after {
 }
 
 .line {
-  border-top: 2px solid #353137;
+  border-top: 2px solid #201e21;
   padding-top: 5px;
   padding-right: 25px;
   color: #bbbbbb;
@@ -164,7 +180,7 @@ s:after {
   text-align: right;
   display: inline-block;
   margin-bottom: 1px;
-  background-color: #201e21;
+  background-color: #353137;
   border-radius: 0px 25px 25px 0px;
   width: 150px;
   -webkit-user-select: none;
@@ -186,12 +202,12 @@ s:after {
 
 .tabs-menu .current a {
   color: #bbbbbb;
-  background-color: #353137;
+  background-color: #201e21;
   width: 180px;
 }
 
 .tab {
-  border: 2px solid #353137;
+  border: 2px solid #201e21;
   border-radius: 10px;
   width: 75%;
   max-width: 1000px;
@@ -236,8 +252,14 @@ s:after {
 }
 
 #hpexp {
-  padding: 30px;
   width: 50%;
+  padding: 30px 10px;
+  border-right: 2px solid #201e21;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 #hp {
@@ -247,6 +269,7 @@ s:after {
   float: left;
   padding-left: 35px;
   display: inline-block;
+  cursor: default;
   position: relative;
   text-shadow: -3px 0 #131218, 0 3px #131218, 3px 0 #131218, 0 -3px #131218;
   -webkit-transition: linear 0.3s;
@@ -254,6 +277,12 @@ s:after {
   -ms-transition: linear 0.3s;
   -o-transition: linear 0.3s;
   transition: linear 0.3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 #exp {
@@ -263,7 +292,6 @@ s:after {
   position: relative;
   text-align: right;
   padding-top: 50px;
-  margin-right: 32px;
   text-shadow: -3px 0 #131218, 0 3px #131218, 3px 0 #131218, 0 -3px #131218;
   -webkit-transition: linear 0.3s;
   -moz-transition: linear 0.3s;
@@ -276,7 +304,7 @@ s:after {
   position: relative;
   height: 15px;
   margin: 0px 20px;
-  background-color: #201e21;
+  background-color: #353137;
   border-radius: 50px 50px 50px 50px;
   opacity: 0.7;
   -webkit-transition: linear 0.3s;
@@ -301,19 +329,24 @@ s:after {
 
 .circles {
   float: right;
-  width: 50%;
-  margin-top: -150px;
-  padding: 30px;
+  width: 45%;
+  margin-top: -160px;
+  padding: 30px 0px;
 }
 
 .circle {
   display: inline-block;
-  background-color: #353137;
+  background-color: #201e21;
   border-radius: 100px 50px 50px 100px;
   width: 100px;
   height: 50px;
   float: right;
-  margin: 10px 0px 5px 50px;
+  margin: 10px 20px 5px 20px;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 #circlevalue {
@@ -321,6 +354,7 @@ s:after {
   font-family: 'Days One', sans-serif;
   font-size: 50px;
   float: left;
+  cursor: default;
   right: 10px;
   position: relative;
   display: inline-block;
@@ -330,10 +364,17 @@ s:after {
   -ms-transition: linear 0.3s;
   -o-transition: linear 0.3s;
   transition: linear 0.3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 #circlevalue a {
   color: #5040b1;
+  cursor: default;
 }
 
 #circlelabel {
@@ -343,10 +384,124 @@ s:after {
   font-size: 18px;
   display: inline-block;
   width: 150px;
+  cursor: default;
   margin-top: -85px;
   margin-right: -10px;
   text-align: right;
   text-shadow: -3px 0 #131218, 0 3px #131218, 3px 0 #131218, 0 -3px #131218;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#statline {
+  padding: 20px;
+  width: 44%;
+  display: inline-block;
+}
+
+#statline a {
+  color: #bbbbbb;
+  cursor: default;
+}
+
+#statprof {
+  float: left;
+  position: relative;
+  z-index: 9;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: -9px;
+  text-shadow: -3px 0 #131218, 0 3px #131218, 3px 0 #131218, 0 -3px #131218;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+#stat {
+  display: inline;
+  font-family: 'Days One', sans-serif;
+  position: relative;
+  font-size: 35px;
+  float: left;
+  z-index: 9;
+  margin-top: -17px;
+  margin-left: 15px;
+  cursor: default;
+  text-shadow: -3px 0 #131218, 0 3px #131218, 3px 0 #131218, 0 -3px #131218;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#stat2 {
+  font-family: 'Days One', sans-serif;
+  display: inline;
+  margin-top: -20px;
+  font-size: 40px;
+  position: relative;
+  float: right;
+  cursor: default;
+  padding-right: 10px;
+  text-shadow: -3px 0 #131218, 0 3px #131218, 3px 0 #131218, 0 -3px #131218;
+  z-index: 9;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.bar {
+  position: relative;
+  height: 12px;
+  margin-top: 3px;
+  margin-bottom: -5px;
+  background-color: #201e21;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.barinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  background-color: #353137;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 .chara {
@@ -362,7 +517,7 @@ s:after {
   min-height: 100px;
   padding-left: 100px;
   background-color: #131218;
-  border-top: 2px solid #201e21;
+  border-top: 2px solid #353137;
   -webkit-transition: linear 0.3s;
   -moz-transition: linear 0.3s;
   -ms-transition: linear 0.3s;
@@ -385,7 +540,7 @@ s:after {
   width: 150px;
   font-family: 'Days One', sans-serif;
   font-size: 20px;
-  box-shadow: 0 0 0 2px #353137;
+  box-shadow: 0 0 0 2px #201e21;
 }
 
 .chara-roll button b {

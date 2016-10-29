@@ -47,6 +47,10 @@ a {
 	color: $fontcolor
 }
 
+i{
+	color: $accentcolor
+}
+
 s {
   text-decoration: none;
   position: relative;
@@ -61,6 +65,14 @@ s:after {
   border-top: 2px solid $border1color;
   height: 45%;
   width: 100%;
+}
+
+hr {
+    background-color: $border2color;
+    border: none;
+    height: 2px;
+	width: 50%;
+	@include transition(linear .3s)
 }
 
 .header {
