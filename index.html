@@ -187,13 +187,13 @@
 		<div class="hpbar"> <!------------------------------------- HEALTH BAR --->
 			<span class="hpbarinner template" style="width:75%"></span>
 			<span class="hpbarinner evren" style="width:100%"></span>
-			<span class="hpbarinner calanthe" style="width:75%"></span>
-			<span class="hpbarinner levent" style="width:75%"></span>
+			<span class="hpbarinner calanthe" style="width:100%"></span>
+			<span class="hpbarinner levent" style="width:100%"></span>
 		</div>
 		<div id="hp"> <!------------------------------------------ HEALTH TEXT --->
 			<span class="template"> 10 / 10 </span>
 			<span class="evren"> 11 / 11 </span>
-			<span class="calanthe"> 10 / 10 </span>
+			<span class="calanthe"> 8 / 8 </span>
 			<span class="levent"> 10 / 10 </span>		
 		HP </div>
 	
@@ -208,8 +208,8 @@
 		<div class="circle"><div id="circlevalue"> <!------------- ARMOR CLASS --->
 			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="template"> 10 </a>
 			<a href="#" title="10 (Base) + 2 (Dex Modifier) + 0 (Armor Modifier) + 3 (Mage Armor)" class="evren"> 15 </a>
-			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="calanthe"> 10 </a>
-			<a href="#" title="10 (Base) + 0 (Dex Modifier) + 0 (Armor Modifier)" class="levent"> 10 </a>
+			<a href="#" title="10 (Base) + 3 (Dex Modifier) + 0 (Armor Modifier)" class="calanthe"> 13 </a>
+			<a href="#" title="10 (Base) + 3 (Dex Modifier) + 0 (Armor Modifier)" class="levent"> 13 </a>
 		</div><div id="circlelabel"> Armor Class </div></div>
 		<div class="circle"><div id="circlevalue"> <!------------------- SPEED --->
 			<span class="template"> 30 </span>
@@ -217,63 +217,81 @@
 			<span class="calanthe"> 30 </span>
 			<span class="levent"> 30 </span>
 		</div><div id="circlelabel"> Speed </div></div>
+		<div class="circle"><div id="circlevalue"> <!-------------- INITIATIVE --->
+			<a href="#" title="+ 0 (Dex Modifier)" class="template"> 0 </a>
+			<a href="#" title="+ 2 (Dex Modifier)" class="evren"> 2 </a>
+			<a href="#" title="+ 0 (Dex Modifier)" class="calanthe"> 3 </a>
+			<a href="#" title="+ 0 (Dex Modifier)" class="levent"> 3 </a>
+		</div><div id="circlelabel"> Initiative </div></div>
 		<div class="circle"><div id="circlevalue"> <!-------------- PERCEPTION --->
 			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="template"> 10 </a>
 			<a href="#" title="10 (Base) + 0 (Wis Modifier) + 2 (Proficiency Modifier)" class="evren"> 12 </a>
-			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="calanthe"> 10 </a>
+			<a href="#" title="10 (Base) + 1 (Wis Modifier) + 2 (Proficiency Modifier)" class="calanthe"> 13 </a>
 			<a href="#" title="10 (Base) + 0 (Wis Modifier)" class="levent"> 10 </a>
 		</div><div id="circlelabel"> Perception </div></div>
 	  
 	  </div>
 	  </div><hr>
-	  <div class="block"> <!---------------------------------------- STATS --->
+	  <div class="block"> <!-------------------------------------------- STATS --->
 			<div id="statline"><div id="statprof"> <!---------------- STRENGTH --->
 				<i class="fa fa-circle-o template" aria-hidden="true"></i>
 				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
 				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
 				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
 			</div><div id="stat">STR</div>
-				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
-				<div id="stat2" class="evren"><a href="#" title="Modifier: -1" class="evren"> 8 </a></div>
-				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
-				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+				<div id="stat2" class="template"><a href="#" class="template"> 10 </a> 
+					<div id="statmod" class="template"> +0 </div> </div>
+				<div id="stat2" class="evren"><a href="#" class="evren"> 8 </a>
+					<div id="statmod" class="evren"> -1 </div> </div>
+				<div id="stat2" class="calanthe"><a href="#" class="calanthe"> 9 </a>
+					<div id="statmod" class="calanthe"> -1 </div> </div>
+				<div id="stat2" class="levent"><a href="#" class="levent"> 12 </a>
+					<div id="statmod" class="levent"> +1 </div> </div>
 			<div class="bar">
-				<span class="barinner template" style="width:50%"></span>
+				<span class="barinner template" style="width:60%"></span>
 				<span class="barinner evren" style="width:40%"></span>
-				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner calanthe" style="width:45%"></span>
 				<span class="barinner levent" style="width:50%"></span>
 			</div></div>
 			<div id="statline"><div id="statprof"> <!------------ INTELLIGENCE --->
 				<i class="fa fa-circle-o template" aria-hidden="true"></i>
 				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
 				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
-				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+				<i class="fa fa-circle levent" aria-hidden="true"></i>
 			</div><div id="stat">INT</div>
-				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
-				<div id="stat2" class="evren"><a href="#" title="Modifier: +2 | 14 (Base) + 1 (Racial)" class="evren"> 15 </a></div>
-				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
-				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+				<div id="stat2" class="template"><a href="#" class="template"> 10 </a>
+					<div id="statmod" class="template"> +0 </div> </div>
+				<div id="stat2" class="evren"><a href="#" class="evren"> 15 </a>
+					<div id="statmod" class="evren"> +2 </div> </div>
+				<div id="stat2" class="calanthe"><a href="#" class="calanthe"> 12 </a>
+					<div id="statmod" class="calanthe"> +1 </div> </div>
+				<div id="stat2" class="levent"><a href="#" class="levent"> 14 </a>
+					<div id="statmod" class="levent"> +2 </div> </div>
 			<div class="bar">
 				<span class="barinner template" style="width:50%"></span>
 				<span class="barinner evren" style="width:75%"></span>
-				<span class="barinner calanthe" style="width:50%"></span>
-				<span class="barinner levent" style="width:50%"></span>
+				<span class="barinner calanthe" style="width:60%"></span>
+				<span class="barinner levent" style="width:70%"></span>
 			</div></div>
 			<div id="statline"><div id="statprof"> <!--------------- DEXTERITY --->
 				<i class="fa fa-circle-o template" aria-hidden="true"></i>
 				<i class="fa fa-circle-o evren" aria-hidden="true"></i>
-				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
-				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
+				<i class="fa fa-circle calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle levent" aria-hidden="true"></i>
 			</div><div id="stat">DEX</div>
-				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
-				<div id="stat2" class="evren"><a href="#" title="Modifier: +2" class="evren"> 15 </a></div>
-				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
-				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+				<div id="stat2" class="template"><a href="#" class="template"> 10 </a>
+					<div id="statmod" class="template"> +0 </div> </div>
+				<div id="stat2" class="evren"><a href="#" class="evren"> 15 </a>
+					<div id="statmod" class="evren"> +2 </div> </div>
+				<div id="stat2" class="calanthe"><a href="#" class="calanthe"> 16 </a>
+					<div id="statmod" class="calanthe"> +3 </div> </div>
+				<div id="stat2" class="levent"><a href="#" class="levent"> 16 </a>
+					<div id="statmod" class="levent"> +3 </div> </div>
 			<div class="bar">
 				<span class="barinner template" style="width:50%"></span>
 				<span class="barinner evren" style="width:75%"></span>
-				<span class="barinner calanthe" style="width:50%"></span>
-				<span class="barinner levent" style="width:50%"></span>
+				<span class="barinner calanthe" style="width:80%"></span>
+				<span class="barinner levent" style="width:80%"></span>
 			</div></div>
 			<div id="statline"><div id="statprof"> <!------------------ WISDOM --->
 				<i class="fa fa-circle-o template" aria-hidden="true"></i>
@@ -281,14 +299,18 @@
 				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
 				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
 			</div><div id="stat">WIS</div>
-				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
-				<div id="stat2" class="evren"><a href="#" title="Modifier: +0" class="evren"> 10 </a></div>
-				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
-				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+				<div id="stat2" class="template"><a href="#" class="template"> 10 </a>
+					<div id="statmod" class="template"> +0 </div> </div>
+				<div id="stat2" class="evren"><a href="#" class="evren"> 10 </a>
+					<div id="statmod" class="evren"> +0 </div> </div>
+				<div id="stat2" class="calanthe"><a href="#" class="calanthe"> 12 </a>
+					<div id="statmod" class="calanthe"> +1 </div> </div>
+				<div id="stat2" class="levent"><a href="#" class="levent"> 10 </a>
+					<div id="statmod" class="levent"> +0 </div> </div>
 			<div class="bar">
 				<span class="barinner template" style="width:50%"></span>
 				<span class="barinner evren" style="width:50%"></span>
-				<span class="barinner calanthe" style="width:50%"></span>
+				<span class="barinner calanthe" style="width:60%"></span>
 				<span class="barinner levent" style="width:50%"></span>
 			</div></div>
 			<div id="statline"><div id="statprof"> <!------------ CONSTITUTION --->
@@ -297,31 +319,39 @@
 				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
 				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
 			</div><div id="stat">CON</div>
-				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
-				<div id="stat2" class="evren"><a href="#" title="Modifier: -1" class="evren"> 8 </a></div>
-				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
-				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+				<div id="stat2" class="template"><a href="#" class="template"> 10 </a>
+					<div id="statmod" class="template"> +0 </div> </div>
+				<div id="stat2" class="evren"><a href="#" class="evren"> 8 </a>
+					<div id="statmod" class="evren"> -1 </div> </div>
+				<div id="stat2" class="calanthe"><a href="#" class="calanthe"> 10 </a>
+					<div id="statmod" class="calanthe"> +0 </div> </div>
+				<div id="stat2" class="levent"><a href="#" class="levent"> 14 </a>
+					<div id="statmod" class="levent"> +2 </div> </div>
 			<div class="bar">
 				<span class="barinner template" style="width:50%"></span>
 				<span class="barinner evren" style="width:40%"></span>
 				<span class="barinner calanthe" style="width:50%"></span>
-				<span class="barinner levent" style="width:50%"></span>
+				<span class="barinner levent" style="width:70%"></span>
 			</div></div>
 			<div id="statline"><div id="statprof"> <!---------------- CHARISMA --->
 				<i class="fa fa-circle-o template" aria-hidden="true"></i>
 				<i class="fa fa-circle evren" aria-hidden="true"></i>
-				<i class="fa fa-circle-o calanthe" aria-hidden="true"></i>
+				<i class="fa fa-circle calanthe" aria-hidden="true"></i>
 				<i class="fa fa-circle-o levent" aria-hidden="true"></i>
 			</div><div id="stat">CHA</div>
-				<div id="stat2" class="template"><a href="#" title="Modifier: +0" class="template"> 10 </a></div>
-				<div id="stat2" class="evren"><a href="#" title="Modifier: +3 | 15 (Base) + 2 (Racial)" class="evren"> 17 </a></div>
-				<div id="stat2" class="calanthe"><a href="#" title="Modifier: +0" class="calanthe"> 10 </a></div>
-				<div id="stat2" class="levent"><a href="#" title="Modifier: +0" class="levent"> 10 </a></div>
+				<div id="stat2" class="template"><a href="#" class="template"> 10 </a>
+					<div id="statmod" class="template"> +0 </div> </div>
+				<div id="stat2" class="evren"><a href="#" title="15 (Base) + 2 (Racial)" class="evren"> 17 </a>
+					<div id="statmod" class="evren"> +3 </div> </div>
+				<div id="stat2" class="calanthe"><a href="#" class="calanthe"> 16 </a>
+					<div id="statmod" class="calanthe"> +3 </div> </div>
+				<div id="stat2" class="levent"><a href="#" class="levent"> 8 </a>
+					<div id="statmod" class="levent"> -1 </div> </div>
 			<div class="bar">
 				<span class="barinner template" style="width:50%"></span>
 				<span class="barinner evren" style="width:85%"></span>
-				<span class="barinner calanthe" style="width:50%"></span>
-				<span class="barinner levent" style="width:50%"></span>
+				<span class="barinner calanthe" style="width:80%"></span>
+				<span class="barinner levent" style="width:40%"></span>
 			</div></div>
 	  </div>
 	  </div>
@@ -337,21 +367,21 @@
 		<div class="linelabel"> PERSONALITY TRAITS </div><br>
 			<div class="template"> <p> # </p> </div>
 			<div class="evren"> <p> # I like to squeeze into small places where no one else can get to me. </p> </div>
-			<div class="calanthe"> <p> # </p> </div>
+			<div class="calanthe"> <p> # I am always calm, no matter what the situation, I never raise my voice or let my emotions control me. </p> </div>
 			<div class="levent"> <p> # </p> </div>
                 </div></div>
 		<div class="container"><div class="line"> <!------------------- IDEALS --->
 		<div class="linelabel"> IDEALS </div><br>
 			<div class="template"> <p> # </p> </div>
 			<div class="evren"> <p> # Community. We have to take care of each other, because no one else is going to do it. (Lawful.)</p> </div>
-			<div class="calanthe"> <p> # </p> </div>
+			<div class="calanthe"> <p> # Greed. I will do whatever it takes to become wealthy. (Evil.) </p> </div>
 			<div class="levent"> <p> # </p> </div>
                 </div></div>
 		<div class="container"><div class="line"> <!-------------------- BONDS --->
 		<div class="linelabel"> BONDS </div><br>
 			<div class="template"> <p> </p> </div>
 			<div class="evren"> <p> # I owe my survival to another urchin who taught me to live on the streets. </p> </div>
-			<div class="calanthe"> <p> </p> </div>
+			<div class="calanthe"> <p> # I'm trying to pay off an old debt I owe to a generous benefactor. </p> </div>
 			<div class="levent"> <p> </p> </div>
                 </div></div>
 
@@ -375,9 +405,9 @@
 			</div>
 		</div>
 		<div class="calanthe"> <!-------------------------- CALANTHE RELATIONS --->
-			<div class="relation"> <!------------------------- CALANTHE > NAME --->
-				<img src="https://dl.dropboxusercontent.com/s/88ttu8ab8a0r1pt/relation.png"> <div class="end"></div>
-				<strong> Name - Relation </strong>
+			<div class="relation"> <!------------------------ CALANTHE > ISRAA --->
+				<img src="https://dl.dropboxusercontent.com/s/4m4wj0rhc56ah5s/israarelation.png"> <div class="end"></div>
+				<strong> Israa Demir - Relation </strong>
 				<p> </p>
 			</div> 
 		</div>
@@ -393,7 +423,7 @@
 		<div class="linelabel"> FLAWS </div><br>
 			<div class="template"> <p> # </p> </div>
 			<div class="evren"> <p> # I will never fully trust anyone other than myself. </p> </div>
-			<div class="calanthe"> <p> # </p> </div>
+			<div class="calanthe"> <p> # When faced with a choice between money and my friends. I usually choose money. </p> </div>
 			<div class="levent"> <p> # </p> </div>
                 </div></div>
 		<div class="container"><div class="line"> <!---------------- APPEARANCE --->
@@ -405,7 +435,71 @@
                 </div></div>
       </div>
       <div id="tab-3" class="tab-content"> <!--------------- FEATURES & TRAITS --->
-        
+	  
+		<div class="template"> <!----------------------------- TEMPLATE TRAITS --->
+        <div id="traitcontainer"><div class="line">
+			<div class="linelabel"> TRAIT OR FEATURE </div>
+			<p> This is the description of the trait or feature. </p>
+		</div></div><Br>
+		</div>
+		<div class="evren"> <!----------------------------------- EVREN TRAITS --->
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> DARKVISION </div>
+			<p> Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray. </p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> HELLISH RESISTANCE </div>
+			<p> You have resistance to fire damage. </p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> INFERNAL LEGACY </div>
+			<p> You are naturally proficient at stealth. 
+				<!---
+					Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. This spell uses Charisma as your spellcasting ability. 
+					Once you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.
+				---></p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> CITY SECRETS </div>
+			<p> You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow. </p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> AWAKENED MIND </div>
+			<p> Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creatures you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. </p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> PACT MAGIC - LA'AHAD </div>
+			<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. <br><br>
+			Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. </p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> ELDRITCH INVOCATIONS </div>
+			<p> In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.<br><br>
+			At 2nd level, you gain two eldritch invocations of your choice. Your invocations options are detailed at end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table. Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.<br><br>
+			A level prerequisite in an invocation refers to warlock level, not character level.<br><br>
+			<strong>AGONIZING BLAST</strong> <br>
+			(Prerequisite: Eldritch Blast Cantrip) When you cast Eldritch Blast, add your Charisma modifier to the damage it deals on a hit.<br><br>
+			<strong>ARMOR OF SHADOWS</strong><br>
+			You can cast <a href="#" title="Your base AC becomes 13 + your Dexterity modifier. The spell ends if you don armor or if you dismiss the spell as an action.">Mage Armor</a> on yourself at will, without expending a spell slot or material components. </p>
+		</div></div><Br>
+		<!--- For Later Use
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> ENTROPIC WARD </div><br>
+			<p> At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disavantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. <br><br>
+			Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> THOUGHT SHIELD </div><br>
+			<p> Starting at 10th level, your thoughts can't be read by telepathy or other means unless you allow it. You also have resistance to psychic damage, and whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do. </p>
+		</div></div><Br>
+		<div id="traitcontainer"><div class="line">
+			<div class="linelabel"> CREATE THRALL </div><br>
+			<p> At 14th level, you gain the ability to infect a humanoid's mind with alien magic of your patron. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again.<br><br>
+			You can communicate telepathically with the charmed creature as long as the two of you are on the same place of existence. </p>
+		</div></div><Br>
+		--->
+		</div>
+		
       </div>
       <div id="tab-4" class="tab-content"> <!------------------- PROFICIENCIES --->
         

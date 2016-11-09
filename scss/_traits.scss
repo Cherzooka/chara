@@ -1,0 +1,31 @@
+#traitcontainer {
+    padding: 20px 0px;
+	margin-left: 5%;
+	width: 90%;
+    display: inline-block;
+	@include transition(linear .3s)
+}
+
+#traitcontainer .line {
+    padding: 0 20px;
+	@include transition(linear .3s)
+}
+
+#traitcontainer .linelabel {
+    margin-left: 100px;
+	margin-top:-24px;
+	@include transition(linear .3s)
+}
+
+#traitcontainer p {
+	width: 75%;
+	margin-left: 5%;
+	padding-top: 10px;
+	text-align: justify;
+	@include transition(linear .3s)
+}
+
+#traitcontainer p strong {
+	font-size: 14px;
+	transform: uppercase;
+}
